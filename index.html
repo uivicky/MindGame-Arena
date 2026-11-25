@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en" class="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MindGame Arena — Free Mind Games Online | Play Free. Think Smarter.</title>
+    <meta
+      name="description"
+      content="Play free mind games, memory games, brain puzzles, focus challenges and reaction tests online. Play instantly in MindGame Arena without registration."
+    />
+    <meta name="theme-color" content="#F97316" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="MindGame Arena" />
+    <meta
+      property="og:title"
+      content="MindGame Arena — Free Mind Games Online | Play Free. Think Smarter."
+    />
+    <meta
+      property="og:description"
+      content="Play free mind games, memory games, brain puzzles, focus challenges and reaction tests online."
+    />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta
+      name="twitter:title"
+      content="MindGame Arena — Free Mind Games Online | Play Free. Think Smarter."
+    />
+    <meta
+      name="twitter:description"
+      content="Play free mind games, memory games, brain puzzles, focus challenges and reaction tests online."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@500;600;700&family=Manrope:wght@600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <script>
+      (function () {
+        try {
+          var saved =
+            localStorage.getItem('mindgame_arena_theme') ||
+            localStorage.getItem('neurofit_theme');
+          if (saved === 'light') {
+            document.documentElement.classList.remove('dark');
+          } else {
+            document.documentElement.classList.add('dark');
+          }
+        } catch (e) {}
+      })();
+    </script>
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "WebSite",
+        "name": "MindGame Arena",
+        "alternateName": "Play Free. Think Smarter.",
+        "description": "Play free mind games, memory games, brain puzzles, focus challenges and reaction tests online."
+      }
+    </script>
+  </head>
+  <body class="bg-[#F8F8FA] text-[#171717] dark:bg-[#111318] dark:text-[#F4F4F6] antialiased selection:bg-[#F97316]/25">
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
